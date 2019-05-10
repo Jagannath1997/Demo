@@ -1,0 +1,424 @@
+
+Build Tools:
+------------
+As part of Project Development along with Technologies we need to use some tools also to complete development successfully.
+
+
+ICICI Bank --- > Spring Spring Boot Hibernate and Restfulservice Oracle.
+
+
+Jars downloading
+Adding Jars to Build Path
+Compiling
+Executing Unit Test Cases
+Packging (jar or war or ear)
+Deployment
+
+To automate all above steps we need a build Tool.
+
+Build Tools: Ant or Maven or Gradle
+
+
+Version Control Tools or Repository servers or SCM
+----------------------------------------------------
+
+Project Development will happen in several locations and in several companies.
+
+We need a common location to maintain all source code related to a project.
+
+We can use Reposiotory servers to maintain project sourcecode.
+
+Ex : Clear Case, CVC, VCS, SVN , GIT HUB and BitBucket.
+
+
+Unit Testing Tools
+------------------
+Junit 
+Mockito
+PowerMock
+EasyMock
+WireMock etc...
+
+Code Coverage Tools:
+--------------------
+How many lines of code is covered in junit cases can be identified by using code coverage tools.
+
+Ex : Jacocco
+
+
+Logging Tools
+-------------
+Log4j
+Log4j2
+SLF4J
+Logback etc...
+
+
+Log Monitoring Tools
+--------------------
+Putty
+WinSCP
+Splunk
+
+CI & CD tools
+-------------
+Jenkins
+Docker (Container)
+
+Performance Testing Tools
+--------------------------
+JMETER
+Load Runner
+
+
+
+Bug Reporting Tools:
+--------------------
+BugZilla
+JIRA
+
+Code Review Tools
+-----------------
+PMD and SonarQube
+
+
+
+
+
+
+
+
+SVN Client
+----------
+1) Tortoise SVN we can use as SVN client software
+
+2) Subclipse plugin also we can use as SVN client Software (for IDE)
+
+3) SVN client software will be installed in all project team members systems.
+
+
+1) Project Manager will send an email to SVN admin to create Repository and user accounts.
+
+Repository Name : SBI_App
+
+ramesh.b@tcs.com
+sunil.g@tcs.com
+gita.a@tcs.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+Repo URL : https://DESKTOP-OLT40PU/svn/SBI_App_Repo
+
+
+Repo URL : https://DESKTOP-OLT40PU/svn/Axis_Bank_App_Repo
+
+
+
+
+
+To : svn admin or admin Dl 
+
+cc : manager and team lead
+
+Subject : SVN Access is Required
+
+Hi Admin Team,
+
+My self Ashok, recently i joined in Axis Bank Project. Please provide me SVN access and details.
+
+Email : ashok.b@tcs.com
+Emp Id : 97979
+Phno : 80808080
+VPN ID : ABollepalli
+
+@Satish : Please approve this request.
+
+Thanks & Regards,
+Ashok.
+------------------------------------------------------------------
+Approved......
+-------------------------------------------------
+Account is created. PFB details
+
+URL  : https://DESKTOP-OLT40PU/svn/SBI_App_Repo/trunk
+Uname : charles
+pwd : charles
+
+Note : Don't share with anyone.
+
+
+
+
+
+
+
+Add : To commit new files to repository first we need to add those files then only we can commit to repository.
+
+Commit/Check-In : Moving files from local system to Repository.
+
+
+
+SBI Repo Trunk URL : https://DESKTOP-OLT40PU/svn/SBI_App_Repo/trunk
+
+Username : john
+
+password : john 
+
+
+
+Checkout : Taking Repository to Local System. This we will do only first time.
+
+Add : This option is required when we commiting new files to Repository.
+
+Commit : Pusing files/folders from local system to Repository.
+
+
+
+
+
+
+Checkout : If we want take Project From Repository for first time Then We shuould perform Checkout.
+
+Note : To do checkout we should know Repository URL, Uname and pwd.
+
+
+After Modifying existing files, we need to commit/check-in.
+
+Note-1: Before commiting we should compare local file with repository file. If there are any new changes in Repository file we should take update of the file and then we should commit.
+
+Note-2: If it is a new file, first add it and commit.
+
+Compare or Show Diff : This option is used to compare local file with repository file.
+
+
+Update : This option is used to take latest changes from Repository files to local files.
+
+
+Check-In / Commit : This option is used to push changes from local files to Repository files.
+
+
+Note : When we commit a file to Repository, server will incrment Revision Number or Version Number.
+
+
+Show Log: This option is used to see commits history like who, when, why and what.
+
+Delete : We will use this option to delete file(s) from Repository.
+
+It is 2 step process
+
+1) Delete File from local system
+
+2) Commit 
+
+Note: Files which are deleted, will be avilable in previous revisions.
+
+SVN - Subversion
+
+It is an open source repository server
+
+SVN is a Centralized Server.
+
+Server  & Client softwares
+
+Server will be installed in only one computer (Visual SVN)
+
+Client software will be installed in several computers.
+(Tortoise SVN or Subclipse)
+
+They will share SVN URL, Uname and pwd.
+
+Checkout : Taking project from repository server to local system.
+
+Add : New File(s) Should be added to commit
+
+Check-in : The process of moving changes from local system to repository system.
+
+Diff : If we want to commit an existing file first we should compare local file with repository file.
+
+Working Copy -Local file
+Working Base - Repository File
+
+Update : If any new changes are there in repository which are not there in local file then we should take update before committing.
+
+Note : Best Practise is, before making any changes to existing files it is highly recommended to take update first.
+
+
+
+Delete : This is used to delete file from repository. Delete File from Local and Commit that change.
+
+Showlog : It is used to check history of commits (who , when , why and what etc..).
+
+Lock : If we don't want others to commit a file for some time then we can get Lock on that file.
+
+Note : If file is locked by one user then only that user can commit the changes to file others can't commit until unless lock is released.
+
+
+
+Subclipse Plugin
+-----------------
+
+Note : By Default SVN plugin will not be available in IDE
+
+We need to install sublicpse plugin to work with SVN from IDE.
+
+
+Synchronize with Repository
+
+1) Income Mode (We should take update)
+
+2) Outgoing Mode (We should commit)
+
+3) Conflict Mode (problem)
+
+
+
+
+
+
+Best Practises to follow while working with SVN
+-----------------------------------------------
+
+1) Don't share your SVN credentials with anyone
+
+2) Don't Save  SVN Authentication Data
+
+3) When we are leaving desk, always lock the System
+
+4) Always recommended to synchronize with repository before commit
+
+5) We need to make sure our commits will not create compilation failure
+
+
+
+Branches in SVN
+---------------
+trunk : Ongoing Development repository
+
+branches
+
+tags
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hi Ashok,
+
+Welcome to SBI Project..!!
+
+From Next week our sprint is getting started. Please send mail for svn trunk access and setup your workspace.
+
+SVN Admin Email : johnson.d@tcs.com
+
+Thanks,
+Ashok.
+------------------------------------------------------------------------
+
+
+
+Hi Ashok,
+
+Welcome to SBI Project..!!
+
+From Next your work assignments are going start. Please send mail for svn tag access and setup your workspace.
+
+SVN Admin Email : johnson.d@tcs.com
+
+Thanks,
+Ashok.
+
+
+
+Branches in SVN
+---------------
+
+Repository in SVN ? 
+
+
+Dev Team -- on going development activities
+
+SIT & UAT support Team - fixing sit and uat defects
+
+Production Support Team - m  & o
+
+Multiple code bases
+===================
+
+1) trunk - Development activities
+
+2) branches - sit & uat environements will mapped to branches
+
+3) tags - gold copy - production code base
+
+Drawbacks in SVN
+----------------
+1) Client and Server should be connected to Network.
+
+2) Internet Connection is mandatory to access SVN Server
+
+3) It is centralized. Single point of failure.
+
+4) If SVN server system is crashed we can't get data back.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
