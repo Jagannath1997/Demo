@@ -1,0 +1,106 @@
+SVN: SubVersion
+----------------
+Svn is a centralized version control repository where we can maintain allproject realated documents and source code 
+of the project.
+
+The administrator will install svn server in the one centralized machine and all the programmer will take the permission
+to access that repository.
+
+>Svn Server(Visual Svn server)
+>Svn client (tortoise svn client)
+
+each programmer will install svn client i.e tortoies svn in our local system. 
+and send a mail to the manager to give permission to access the repository.
+One we get the credential to access the repository we can perform below operations...
+
+Checkout:
+--------
+   The process of taking the whole project from repository to our local system is called checkout,
+this process we need to done only once.
+
+CheckIn | Commit :
+------------------
+When we want to move our changes code to repositoyr we need to prform commit operation
+before prform commit operation we need to compare the code (diff) and check whether is there any changes in
+repository or not if any changes occured then update the localsystem by taking the latest code and then 
+perform commit operation.
+if there is no change in repository then simply commit the code.
+
+Add:
+-----
+	If we created a new file then we have to commit those file in repository before commit we have to perform add 
+operation then when the file is added into the repository then commit the file.
+
+Delete:
+-------
+If we found that there is a file which is not necessary then we can delete this file 
+two step process.
+1.first delete those file from our local system
+2.then commit those delete into the repository
+ then new version is added in repository 
+Note:Thoughwe delete the file also the deleted file backup is also available in repository.
+
+showlog:
+---------
+	This process is used to check the all commited history of repository 
+who changes , when changes ,what changes, why changes..
+
+lock:
+-----
+	To escape from overriding problem we perform lock operation, by which when we lock any file 
+no other person can commit the changes in same file he has to wait untill unless I release the 
+lock .
+once I commited my changes in to repository then automatically file will be unlocked.
+->rght click on file->tortoies ->get Lock
+
+conflict:
+---------
+	The conflict problem is raised when we perform wrongn updation process.
+if two developer make the changs in same file and same line then if we try to commit at that time 
+conflict problem is raised, by which some un wanted file is generated we have to fix this 
+problem explicitily(manually) by deleting those file and commit again.
+
+revert:
+-------
+	Revert operation is a process by which we can return back to one version to another version.
+those previous version will comes as a new version.
+
+we can reverting a perticular version.
+
+
+
+Svn with IDE:
+------------
+Goto marketplace and install subclipse plugin for svn client. after installation 
+import -> check svncheckout -> give the trunk url -> next-> then project will 
+download to our local system
+
+when we want to check-in operation then 
+ rightclick on project-> team->synchronize with repository
+ 
+ Then change the prospective
+ 
+ there is 4 operaton
+ 
+ 1.incomming mode
+ 2.outgoing mode
+ 3.incoming/outgoing mode
+ 4.conflicts mode
+--------------------------------------- 
+There are three branch is available
+1.trunk ->(developer environment)
+2.branches->(UAT env)
+3.tag		->(Prod env ){M & O} maintainance and operations
+
+
+
+
+
+
+
+
+
+
+
+
+
