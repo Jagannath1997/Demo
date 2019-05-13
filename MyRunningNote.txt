@@ -93,6 +93,93 @@ There are three branch is available
 3.tag		->(Prod env ){M & O} maintainance and operations
 
 
+GIT Hub:
+========
+GitHub is a distributed version control repository
+Git hub is a cloud where we can maintain our source code and project related documents
+
+
+First create a git hub account by going 
+www.github.com
+-------------------------
+sethi.jagan1997@gmail.com
+user:Jagannath1997
+pw:github@1997
+-------------------------
+Then create repository 
+ 
+Basically there are three stage to store the code into master repository
+-------------------------------------------------------------------------
+1>we have to store the code into staging area
+2>then commit the code into local repository
+3>then push the code into central/ master repository
+
+
+There are two type of repository 
+--------------------------------
+1>public repository (anyone can access , but those people commit who get permission)
+2>private repository(those people can access who get the permission)
+
+Wecan download git Bash as a client for performing the git operation->
+
+	https://git-scm.com/  ==== install the client from this site
+
+right click on mouse and click on git base a special commandprompt will open 
+
+GitHub:Git hub is a cloud repository system
+Git:Git is used to communicate with git hub from our computer system
+
+Why git is distributed version control system:
+	Because in github the cloud  will contain the project code and each client system also contain same code in
+their local system.
+if master repository will crash then no problem
+
+
+The folling are the command to woring with git from git base command prompt
+-----------------------------------------------------------------------------
+ 
+git config user.email <username> -> for varification
+git config user.password<password>
+
+git config user.email "Jagannath1997"
+git config user.password "github@1997"
+
+git init-> to initialize the git into the local system
+
+git clone -> this command is used to take code from git cloud repository to our local system(same like 
+		checkout in SVN)
+
+git add <file-name> -> This command is used to add the code into staging  area 
+	
+	if we want ot add more than one file then 
+git add <file-name>,<file-name>
+
+	to add all file at a time into staging area
+
+git status-> this command is used to check how many files are added to staging area
+	green color->added
+	red color->not added
+
+git commit ->This command is used to commit the file into local repository 
+
+git push -> This command is used to push the file into central repository(master repository)
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
