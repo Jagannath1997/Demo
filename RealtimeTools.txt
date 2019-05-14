@@ -382,8 +382,7 @@ Drawbacks in SVN
 3) It is centralized. Single point of failure.
 
 4) If SVN server system is crashed we can't get data back.
-
-
+--------------------------------------------------
 
 
 
